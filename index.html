@@ -1,0 +1,768 @@
+<html>
+<script>function changeNavigation(id) {document.getElementById('top').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation1(id) {document.getElementById('bottombox').innerHTML=document.getElementById(id).innerHTML}</script>
+<link href='https://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400italic' rel='stylesheet' type='text/css'>
+<style type = "text/css">
+#container {
+position: Absolute;
+top: 0px;
+left: 0px; 
+height: 100%;
+width: 100%;
+background: #000000; 
+}
+
+h1 {
+	letter-spacing: 2px;
+	color: #FF6A00;
+	font-family: 'Special Elite', cursive;
+	font-size: 35px; 
+	text-align: center; 
+	}
+	
+h2 {
+	letter-spacing: 2px;
+	color: #0026FF;
+	font-family: 'Special Elite', cursive;
+	text-transform: uppercase;
+	font-size: 25px; 
+	}
+		::-webkit-scrollbar {background-color: none; height:5px; width:5px; border:none}
+::-webkit-scrollbar-thumb:vertical {background-color:#0026FF); border: 2px solid #FF6A00; height:50px}
+	
+.tabs{
+position: relative; 
+height: 100%; 
+display:block;
+font-family: 'Special Elite', cursive;
+font-size: 80%; 
+}
+
+.tabs:hover {
+background: #0026FF;
+color: #FF6A00; 
+border-radius: 12px; 
+font-family: 'Special Elite', cursive;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+.tabs1{
+position: relative; 
+height: 100%; 
+display:block;
+}
+
+.tabs1:hover {
+background: #cccccc;
+border-radius: 100%; 
+opacity: .6%; 
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+
+#top {
+position: fixed;
+top: 5%; 
+left: 10%; 
+width: 50%; 
+height: 20%; 
+border: 2px solid #ffffff;  
+border-radius: 15px; 
+}
+
+#bottom {
+position: fixed; 
+top: 28%; 
+left: 10%; 
+width: 50%; 
+height: 60%; 
+border: 2px solid #ffffff;  
+border-radius: 15px; 
+}
+
+#bottombox {
+position: fixed; 
+top: 28.5%; 
+left: 10.5%; 
+width: 49%; 
+height: 59%;
+font-family: 'Josefin Sans', sans-serif;
+color: #0026FF; 
+font-size: 125%; 
+overflow: auto; 
+}
+
+#faceshot {
+position: fixed; 
+top: 5%; 
+left: 61%; 
+height: 40%; 
+width: 20%; 
+border-radius: 100%; 
+border: 2px solid #cccccc; 
+background: url("http://i.imgur.com/a36ur1R.png");
+background-size: 100% 100%; 
+}
+
+#gif {
+position: fixed;
+top: 70%;  
+left: 61%;
+height: 30%;
+width: 20%; 
+background: url("http://i.imgur.com/CYgXGSS.gif");
+background-size: 100% 100%; 
+
+}
+
+#rightpicture {
+position: fixed;
+top: 20%; 
+left: 70%;
+width: 30%;
+height: 80%; 
+background: url("http://i.imgur.com/IVV2Vz3.png");
+background-size: 100% 100%; 
+}
+
+#leftpicture {
+position: fixed; 
+top: 28%; 
+left: 0%; 
+width: 10%; 
+height: 72%; 
+background: url("http://i.imgur.com/BieO731.png");
+background-size: 100% 100%; 
+}
+
+#sidenav1 {
+position: fixed; 
+top: 6%; 
+left: 2%; 
+height: 4%; 
+width: 7%;
+background: #FF6A00;
+border-radius: 12px; 
+border: 2px solid #ffffff; 
+font-family: 'Special Elite', cursive;
+color: #0026FF; 
+text-align: center; 
+font-size: 100%; 
+}
+
+#sidenav2 {
+position: fixed; 
+top: 12%; 
+left: 2%; 
+height: 4%; 
+width: 7%;
+background: #FF6A00;
+border-radius: 12px; 
+border: 2px solid #ffffff;
+font-family: 'Special Elite', cursive; 
+color: #0026FF; 
+text-align: center; 
+font-size: 100%; 
+}
+
+#sidenav3 {
+position: fixed; 
+top: 18%; 
+left: 2%; 
+height: 4%; 
+width: 7%;
+background: #FF6A00;
+border-radius: 12px; 
+border: 2px solid #ffffff; 
+font-family: 'Special Elite', cursive;
+color: #0026FF; 
+text-align: center; 
+font-size: 100%; 
+}
+
+#bottomnav1 {
+position: fixed; 
+left: 10%; 
+top: 95%; 
+height: 4%; 
+width: 7%;
+background: #FF6A00;
+border-radius: 12px; 
+border: 2px solid #ffffff; 
+font-family: 'Special Elite', cursive; 
+color: #0026FF; 
+text-align: center; 
+font-size: 100%; 
+}
+
+#bottomnav2 {
+position: fixed; 
+left: 18.6%; 
+top: 95%; 
+height: 4%; 
+width: 7%;
+background: #FF6A00;
+border-radius: 12px; 
+border: 2px solid #ffffff; 
+font-family: 'Special Elite', cursive; 
+color: #0026FF; 
+text-align: center; 
+font-size: 100%; 
+}
+
+#bottomnav3 {
+position: fixed; 
+left: 27.2%; 
+top: 95%; 
+height: 4%; 
+width: 7%;
+background: #FF6A00;
+border-radius: 12px; 
+border: 2px solid #ffffff; 
+font-family: 'Special Elite', cursive; 
+color: #0026FF; 
+text-align: center; 
+font-size: 100%; 
+}
+
+#bottomnav4 {
+position: fixed; 
+left: 35.8%; 
+top: 95%; 
+height: 4%; 
+width: 7%;
+background: #FF6A00;
+border-radius: 12px; 
+border: 2px solid #ffffff; 
+font-family: 'Special Elite', cursive; 
+color: #0026FF; 
+text-align: center; 
+font-size: 100%; 
+}
+
+#bottomnav5 {
+position: fixed; 
+left: 44.4%; 
+top: 95%; 
+height: 4%; 
+width: 7%;
+background: #FF6A00;
+border-radius: 12px; 
+border: 2px solid #ffffff; 
+font-family: 'Special Elite', cursive; 
+color: #0026FF; 
+text-align: center; 
+font-size: 100%; 
+}
+
+#bottomnav6 {
+position: fixed;
+left: 53%; 
+top: 95%; 
+height: 4%; 
+width: 7%;
+background: #FF6A00;
+border-radius: 12px; 
+border: 2px solid #ffffff; 
+font-family: 'Special Elite', cursive; 
+color: #0026FF; 
+text-align: center; 
+font-size: 100%; 
+}
+
+#basic,#detail,#history,#mana,#rit,#con,#elec,#tribe,#faith {
+display: none; 
+}
+
+#ms1,#ms2,#ms3,#ms4,#ms5,#ms6,#ms7,#ms8,#rs1,#rs2,#rs3,#rs4,#rs5,#rs6,#rs7,#rs8,#rs9,#rs10,#rs11,#cs1,#cs2,#cs3,#cs4,#cs5,#cs6,#cs7,#es1,#es2,#es3,#es4,#ts1,#fs1 {
+display: none; 
+}
+
+#tree1,#tree2,#tree3,#tree4,#tree5,#tree6 {
+display: none; 
+}
+
+#mweave {
+position: fixed; 
+top: 5.5%;
+left:10.5%;
+width: 3%;
+height: 6%; 
+border-radius: 100%; 
+background: url("http://i.imgur.com/zgVc911.png");
+background-size: 100% 100%;
+border: 1px solid #cccccc; 
+}
+
+#mspark {
+position: fixed; 
+top: 5.5%;
+left:15.5%;
+width: 3%;
+height: 6%; 
+border-radius: 100%; 
+background: url("http://i.imgur.com/objqsXq.png");
+background-size: 100% 100%; 
+border: 1px solid #cccccc; 
+}
+
+#Aequip {
+position: fixed; 
+top: 5.5%;
+left: 20.5%;
+width: 3%;
+height: 6%; 
+border-radius: 100%; 
+background: url("http://i.imgur.com/tTWdVUp.png");
+background-size: 100% 100%; 
+border: 1px solid #cccccc; 
+}
+
+#mball {
+position: fixed; 
+top: 5.5%;
+left: 25.5%;
+width: 3%;
+height: 6%; 
+border-radius: 100%; 
+background: url("http://i.imgur.com/DbS69Rs.png");
+background-size: 100% 100%;
+border: 1px solid #cccccc; 
+}
+
+#mregen {
+position: fixed; 
+top: 5.5%;
+left: 30.5%;
+width: 3%;
+height: 6%; 
+border-radius: 100%; 
+background: url("http://i.imgur.com/qLSuKui.png");
+background-size: 100% 100%;
+border: 1px solid #cccccc; 
+}
+
+#carms {
+position: fixed; 
+top: 5.5%;
+left: 35.5%;
+width: 3%;
+height: 6%; 
+border-radius: 100%; 
+background: url("http://i.imgur.com/fLjiDTz.png");
+background-size: 100% 100%;
+border: 1px solid #cccccc; 
+}
+
+#mbust {
+position: fixed; 
+top: 5.5%;
+left: 40.5%;
+width: 3%;
+height: 6%; 
+border-radius: 100%; 
+background: url("http://i.imgur.com/JCLSE1t.png");
+background-size: 100% 100%; 
+border: 1px solid #cccccc; 
+}
+
+#asphere {
+position: fixed; 
+top: 5.5%;
+left: 45.5%;
+width: 3%;
+height: 6%; 
+border-radius: 100%; 
+background: url("http://i.imgur.com/NdBVBK0.png");
+background-size: 100% 100%; 
+border: 1px solid #cccccc; 
+}
+
+#toneage {
+position: fixed; 
+top: 5.5%;
+left:10.5%;
+width: 3%;
+height: 6%; 
+border-radius: 100%; 
+background: url("http://i.imgur.com/doMXVYK.png");
+background-size: 100% 100%; 
+border: 1px solid #cccccc;
+}
+
+#djentblast {
+position: fixed; 
+top: 5.5%;
+left:15.5%;
+width: 3%;
+height: 6%; 
+border-radius: 100%; 
+background: url("http://i.imgur.com/uwjTVe4.png");
+background-size: 100% 100%; 
+border: 1px solid #cccccc;
+}
+
+#tshield {
+position: fixed; 
+top: 5.5%;
+left: 20.5%;
+width: 3%;
+height: 6%; 
+border-radius: 100%; 
+background: url("http://i.imgur.com/pCBWPUZ.png");
+background-size: 100% 100%; 
+border: 1px solid #cccccc;
+}
+
+#psirockina {
+position: fixed; 
+top: 5.5%;
+left: 25.5%;
+width: 3%;
+height: 6%; 
+border-radius: 100%; 
+background: url("http://i.imgur.com/7Xx9FxO.png");
+background-size: 100% 100%; 
+border: 1px solid #cccccc;
+}
+
+#flames {
+position: fixed; 
+top: 5.5%;
+left: 30.5%;
+width: 3%;
+height: 6%; 
+border-radius: 100%; 
+background: url("http://i.imgur.com/zcF38tL.png");
+background-size: 100% 100%; 
+border: 1px solid #cccccc;
+}
+
+#shards {
+position: fixed; 
+top: 5.5%;
+left: 35.5%;
+width: 3%;
+height: 6%; 
+border-radius: 100%; 
+background: url("http://i.imgur.com/15RrqV3.png");
+background-size: 100% 100%; 
+border: 1px solid #cccccc;
+}
+
+#bassboost {
+position: fixed; 
+top: 5.5%;
+left: 40.5%;
+width: 3%;
+height: 6%; 
+border-radius: 100%; 
+background: url("http://i.imgur.com/sY0PvYg.png");
+background-size: 100% 100%; 
+border: 1px solid #cccccc;
+}
+
+#mindseye {
+position: fixed; 
+top: 5.5%;
+left: 45.5%;
+width: 3%;
+height: 6%; 
+border-radius: 100%; 
+background: url("http://i.imgur.com/dxgPnQP.png");
+background-size: 100% 100%; 
+border: 1px solid #cccccc;
+}
+
+#ccom {
+position: fixed; 
+top: 5.5%;
+left: 50.5%;
+width: 3%;
+height: 6%; 
+border-radius: 100%; 
+background: url("http://i.imgur.com/e05MOkS.png");
+background-size: 100% 100%; 
+border: 1px solid #cccccc;
+}
+
+#pandora {
+position: fixed; 
+top: 5.5%;
+left: 55.5%;
+width: 3%;
+height: 6%; 
+border-radius: 100%; 
+background: url("http://i.imgur.com/IKsEu8V.png");
+background-size: 100% 100%; 
+border: 1px solid #cccccc;
+}
+
+#shift {
+position: fixed; 
+top: 12.5%;
+left:10.5%;
+width: 3%;
+height: 6%; 
+border-radius: 100%; 
+background: url("http://i.imgur.com/AtlszWt.png");
+background-size: 100% 100%; 
+border: 1px solid #cccccc;
+}
+
+#pick {
+position: fixed; 
+top: 5.5%;
+left:10.5%;
+width: 3%;
+height: 6%; 
+border-radius: 100%; 
+background: url("http://i.imgur.com/z6wQV7t.png");
+background-size: 100% 100%;
+border: 1px solid #cccccc; 
+}
+
+#grabby {
+position: fixed; 
+top: 5.5%;
+left:15.5%;
+width: 3%;
+height: 6%; 
+border-radius: 100%; 
+background: url("http://i.imgur.com/9hYp8nK.png");
+background-size: 100% 100%; 
+border: 1px solid #cccccc; 
+}
+
+#Garmor {
+position: fixed; 
+top: 5.5%;
+left: 20.5%;
+width: 3%;
+height: 6%; 
+border-radius: 100%; 
+background: url("http://i.imgur.com/hOOgROn.png");
+background-size: 100% 100%; 
+border: 1px solid #cccccc; 
+}
+
+#heavy {
+position: fixed; 
+top: 5.5%;
+left: 25.5%;
+width: 3%;
+height: 6%; 
+border-radius: 100%; 
+background: url("http://i.imgur.com/eZodXNV.png");
+background-size: 100% 100%;
+border: 1px solid #cccccc; 
+}
+
+#side {
+position: fixed; 
+top: 5.5%;
+left: 30.5%;
+width: 3%;
+height: 6%; 
+border-radius: 100%; 
+background: url("http://i.imgur.com/A26jvzn.png");
+background-size: 100% 100%;
+border: 1px solid #cccccc; 
+}
+
+#buzz {
+position: fixed; 
+top: 5.5%;
+left: 35.5%;
+width: 3%;
+height: 6%; 
+border-radius: 100%; 
+background: url("http://i.imgur.com/003vIUL.png");
+background-size: 100% 100%;
+border: 1px solid #cccccc; 
+}
+
+#comp {
+position: fixed; 
+top: 5.5%;
+left: 40.5%;
+width: 3%;
+height: 6%; 
+border-radius: 100%; 
+background: url("http://i.imgur.com/mIYr1Md.png");
+background-size: 100% 100%; 
+border: 1px solid #cccccc; 
+}
+
+#shredder {
+position: fixed; 
+top: 5.5%;
+left:10.5%;
+width: 3%;
+height: 6%; 
+border-radius: 100%; 
+background: url("http://i.imgur.com/j4WSQHn.png");
+background-size: 100% 100%;
+border: 1px solid #cccccc; 
+}
+
+#lbolt {
+position: fixed; 
+top: 5.5%;
+left:15.5%;
+width: 3%;
+height: 6%; 
+border-radius: 100%; 
+background: url("http://i.imgur.com/7FResp6.png");
+background-size: 100% 100%; 
+border: 1px solid #cccccc; 
+}
+
+#charged {
+position: fixed; 
+top: 5.5%;
+left: 20.5%;
+width: 3%;
+height: 6%; 
+border-radius: 100%; 
+background: url("http://i.imgur.com/08gPrNU.png");
+background-size: 100% 100%; 
+border: 1px solid #cccccc; 
+}
+
+#sp {
+position: fixed; 
+top: 5.5%;
+left: 25.5%;
+width: 3%;
+height: 6%; 
+border-radius: 100%; 
+background: url("http://i.imgur.com/n2T9toT.png");
+background-size: 100% 100%;
+border: 1px solid #cccccc; 
+}
+
+#tribething {
+position: fixed; 
+top: 5.5%;
+left:10.5%;
+width: 3%;
+height: 6%; 
+border-radius: 100%; 
+background: url("http://i.imgur.com/gIRtaak.png");
+background-size: 100% 100%;
+border: 1px solid #cccccc; 
+}
+
+#faiththing {
+position: fixed; 
+top: 5.5%;
+left:10.5%;
+width: 3%;
+height: 6%; 
+border-radius: 100%; 
+background: url("http://i.imgur.com/ifV2Fs4.jpg");
+background-size: 100% 100%;
+border: 1px solid #cccccc; 
+}
+</style>
+<div id="container">
+<div id="top"><div id="thing1"></div><div id="thing2"></div><div id="thing3"></div></div> 
+<div id="bottom">
+<div id="bottombox"><h1>The Following Character...</h1><br>Is meant for the "Vetiver Academy" group roleplay. For more information, or to join, please visit the groups website at www.vetiver.weebly.com<br><br>The current song playing on this profile is called "Better Strangers" by Royal Blood. If you have any questions, feel free to pm me, or check out my character hub at www.gamemaster.chatango.com</a></h2></div></div>
+<div id="rightpicture"></div> 
+<div id="faceshot"></div><div id="leftpicture"></div><div id="gif"></div>
+<div id="sidenav1"><span class="tabs" onClick="changeNavigation1 ('basic')"><br>Basic</span></div> 
+<div id="sidenav2"><span class="tabs" onClick="changeNavigation1 ('detail')"><br>Detailed</span></div>
+<div id="sidenav3"><span class="tabs" onClick="changeNavigation1 ('history')"><br>History</span></div>
+<div id="bottomnav1"><span class="tabs" onClick="changeNavigation ('tree1'); changeNavigation1 ('mana')"><br>Manipulation</span></div>
+<div id="bottomnav2"><span class="tabs" onClick="changeNavigation ('tree2'); changeNavigation1 ('rit')"><br>Ritualism</span></div>
+<div id="bottomnav3"><span class="tabs" onClick="changeNavigation ('tree3'); changeNavigation1 ('con')"><br>Conjuration</span></div>
+<div id="bottomnav4"><span class="tabs" onClick="changeNavigation ('tree4'); changeNavigation1 ('elec')"><br>Electromancy</span></div>
+<div id="bottomnav5"><span class="tabs" onClick="changeNavigation ('tree5'); changeNavigation1 ('tribe')"><br>Tribalism</span></div>
+<div id="bottomnav6"><span class="tabs" onClick="changeNavigation ('tree6'); changeNavigation1 ('faith')"><br>Faith</span></div> 
+<div id="basic"><h1>Basic Information</h1><br><u>Name:</u> Ryan O'Connor<br><u>D.O.B:</u> May 3rd, 1996<br><u>Sexual Orientation:</u> Heterosexual<br><u>Height:</u> 5'11<br><u>Eye Color:</u> Green<br><u>Hair Color:</u> Black<br><u>Dexterity:</u> Left Handed<br><u>Magic Trees:</u> Ritualistm | Conjuration | Electricity | Tribalism | Faith</div>
+<div id="detail"><h1>Detailed Information</h1><br><h2>Appearance</h2><br><h1><img src="http://i.imgur.com/P60ypl8.png"></img></h1><br>  As far as physical appearance goes, Ryan looks pretty much what you'd expect from a young adult male. Long black hair covers his head, which he generally has styled to keep away from his eyes. His slightly pale skin make for good contrast against it, and an added layer is thrown into the mix via his bright green eyes; a feature that the girls he has dated picked up on rather quickly. For most of his life, Ryan was fairly lanky in terms of bodily physique, however, due to his excessive physical training and the fighting he did during the Cultist War, he's slowly starting to pack on muscle. His body type would best be described as athletic at this stage; complimented well by his broad shoulders. Ryan has no obvious scars or deformities on his body; he is clean of tattoo's and piercings as well.<br> In terms of his General style of attire; Ryan is typically seen wearing what a normal young man would wear. Anything from a general hoodie and pair of jeans, to a dress shirt and tie with black dress paints. His attire is completely situational; he generally dresses well around people he tends to respect or enjoy the company of.<br>*UPDATE* As of recently, Ryan has started to wear a pair of glasses, due to his eyesight becoming an issue since the conclusion of the war.<br><br><h2>Personality</h2><br><u>The Pros:</u>   Because of the way Ryan thinks; he can be very understanding and empathetic to those who produce a clear case to him. If he has reason to believe that a person should be forgiven, or even trusted, he will do his best to look at the situation as clearly and unbiased as he possibly can (although this does not always happen). Also, despite the fact that he tries to hide it at times, Ryan is a very intelligent person. His problem solving skills and logical reasoning has helped him countless times in both social and combat situations. His unique, self taught  understanding of magic and magical forces has left his mind extremely sharp as well; especially when it comes to will power. His ability to look past deception and figure out the logistics behind another persons magic in combat situations is phenomenal. Ryan is also very Charismatic; a trait developed and enhanced by his life as a performer. He can talk his way out of a lot of problems, and also has the ability to keep his appearance of calm and finesse even when he is obviously extremely angry or desperate.<br><br><u>The Cons:</U> Ryan's Young age directly impacts some of the Con's in his personality. He can be very immature at times; not taking a moment to stop and figure out the gravity of the situation he is in. He's known to be slightly careless and tends to procrastinate when it comes to major things being completed. He's also very bold; and is quick to anger, sometimes brazenly charging towards to action without thinking of a proper way to engage the enemy. His patience can be limited heavily on certain things; sometimes eager to keep things moving, getting agitated if they don't go at the pace that he'd like them to. His magical ability has also left him a little cocky at times, looking down on people who criticize him, assuming that he will always have the advantage in a fight if he has magic and they do not. These traits are not always present, but because of his youth, they tend to come out at the worst of times. Ryan can also be very insensitive with his comments at times. If he is going out of his way to poke fun at someone, or belittle them; he rarely knows which comments are appropriate and which ones are not; causing him to get into fights quite often.</div>
+<div id="history"><h1>Pre-Vetiver History</h1><br><br>Ryan was born on the Third of May, 1996. His Father, Patrick, was a musician who played in many bands in their small town of Ocala, Florida; and his Mother, Jane, was a member of a successful Law Firm that encompassed the town. Ryan's father left about two months after Jane was announced pregnant with her second child, Claire. To this day, as far as Ryan knows; his Father left his mother to continue playing music and because he hated the fact that she was more financially successful than himself. Ryan never forgave his father for leaving before Claire was born, and had never shown any attempts at contacting him.<br><br>Ryan and Claire grew up together with slight distance in the first few years of their lives. They never bothered much with one another and it probably would have stayed that way if not for their mothers intervention. This intervention was not a good one however; as it stemmed from hatred. Learning musical instruments at a young age, Jane kept seeing more and more in her husband in Ryan, and slowly she started to despise the young boy. She tried as hard as she could to keep him from playing music; never paying for anything he wanted, making him save his own allowance and holiday money to buy any of his instruments. She eventually even stopped giving him allowance in the first place, promising only to give it back if he were to give up playing music.<br><br>They got in plenty of fights, and in all; she was a horrible mother to the child, causing him to grow up miserable for a long portion of his life. Realizing this, Claire started to become close to Ryan, feeling horribly guilty that she was treated as the favorite child. They grew extremely close to one another, having each other around whenever they needed.<br><br>Eventually, their mother snapped however. Getting in a huge argument with Ryan, she threatened to kick him out of the house, trying to grab him and pull him out of the door. Claire tried to grab her mother to stop him, but she responded by slapping her across the face. Sending Ryan into a frenzy of anger, he somehow managed to fire a strange bolt of energy out of his fingertips, barely missing his mother and destroying an entire cabinet behind her. In shock as to what happened, Claire ran to her room, and her mother kicked Ryan out; he was only sixteen at the time.<br><br>He stayed to live with his Uncle for the next two years; and he was just as horrible as his mother. He didn’t do a thing for the boy aside from give him a roof under his head. He worked and paid for his own meals, things, and clothes; and he was only allowed a tiny bedroom not even fit for a toddler. If he were ever caught playing music loud enough to be heard, his Uncle would lash out at him; beating him and cursing at him until he stopped.<br><br>Desperate for a way out and curious as to what he did on that night he left his parents house, Ryan searched and searched about magic until he came across information on a mysterious place known as Vetiver Academy. Saving up just enough money for a plane ticket to it’s general area and some spending money for the trip; he abandoned his previous life, hoping to learn more of his powers, and live something more than just confinement.<br><br>Much to the dismay of his sister...Unfortunately.</div>
+<div id="tree1">
+<div id="mweave"><span class="tabs1" onClick="changeNavigation1 ('ms1')"></span></div>
+<div id="mspark"><span class="tabs1" onClick="changeNavigation1 ('ms2')"></span></div>
+<div id="Aequip"><span class="tabs1" onClick="changeNavigation1 ('ms3')"></span></div>
+<div id="mball"><span class="tabs1" onClick="changeNavigation1 ('ms4')"></span></div>
+<div id="mregen"><span class="tabs1" onClick="changeNavigation1 ('ms5')"></span></</div>
+<div id="carms"><span class="tabs1" onClick="changeNavigation1 ('ms6')"></span></</div>
+<div id="mbust"><span class="tabs1" onClick="changeNavigation1 ('ms7')"></span></</div>
+<div id="asphere"><span class="tabs1" onClick="changeNavigation1 ('ms8')"></span></</div>
+</div>
+<div id="tree2">
+<div id="toneage"><span class="tabs1" onClick="changeNavigation1 ('rs1')"></span></div>
+<div id="djentblast"><span class="tabs1" onClick="changeNavigation1 ('rs2')"></span></div>
+<div id="tshield"><span class="tabs1" onClick="changeNavigation1 ('rs3')"></span></div>
+<div id="psirockina"><span class="tabs1" onClick="changeNavigation1 ('rs4')"></span></div> 
+<div id="flames"><span class="tabs1" onClick="changeNavigation1 ('rs5')"></span></div>
+<div id="shards"><span class="tabs1" onClick="changeNavigation1 ('rs6')"></span></div>
+<div id="bassboost"><span class="tabs1" onClick="changeNavigation1 ('rs7')"></span></div>
+<div id="mindseye"><span class="tabs1" onClick="changeNavigation1 ('rs8')"></span></div> 
+<div id="ccom"><span class="tabs1" onClick="changeNavigation1 ('rs9')"></span></div> 
+<div id="pandora"><span class="tabs1" onClick="changeNavigation1 ('rs10')"></span></div>
+<div id="shift"><span class="tabs1" onClick="changeNavigation1 ('rs11')"></span></div> 
+</div>
+<div id="tree3">
+<div id="pick"><span class="tabs1" onClick="changeNavigation1 ('cs1')"></span></div>
+<div id="grabby"><span class="tabs1" onClick="changeNavigation1 ('cs2')"></span></div>
+<div id="Garmor"><span class="tabs1" onClick="changeNavigation1 ('cs3')"></span></div>
+<div id="heavy"><span class="tabs1" onClick="changeNavigation1 ('cs4')"></span></div>
+<div id="side"><span class="tabs1" onClick="changeNavigation1 ('cs5')"></span></div>
+<div id="buzz"><span class="tabs1" onClick="changeNavigation1 ('cs6')"></span></div>
+<div id="comp"><span class="tabs1" onClick="changeNavigation1 ('cs7')"></span></div>
+</div>
+<div id="tree4">
+<div id="shredder"><span class="tabs1" onClick="changeNavigation1 ('es1')"></span></div>
+<div id="lbolt"><span class="tabs1" onClick="changeNavigation1 ('es2')"></span></div>
+<div id="charged"><span class="tabs1" onClick="changeNavigation1 ('es3')"></span></div>
+<div id="sp"><span class="tabs1" onClick="changeNavigation1 ('es4')"></span></div> 
+</div>
+<div id="tree5">
+<div id="tribething"><span class="tabs1" onClick="changeNavigation1 ('ts1')"></span></div>
+</div>
+<div id="tree6">
+<div id="faiththing"><span class="tabs1" onClick="changeNavigation1 ('fs1')"></span></div>
+</div>
+<div id="ms1"><h1><img src="http://i.imgur.com/scJhpFV.gif"></img></h1><br><h2>Mana Weave</h2><br>The ability to channel mana into the palms of ones hands and their mediums. This is a basic mana control and the first spell every mage should learn.</div><div id="ms2"><h1><img src="http://i.imgur.com/i6Qmlkc.gif"></img></h1><br><h2>Mana Spark</h2><br>A basic projectile attack created out of the users mana. This is the first offensive spell most mages will learn. </div><div id="ms3"><h1><img src="http://i.imgur.com/kT0G41q.gif"></img></h1><br><h2>Aura Equip</h2><br>An equippable aura that increase the users base stats, such as speed and strength; this also allows spells to be charged and fired much quicker while active.</div><div id="ms4"><h1><img src="http://i.imgur.com/7nYQdKI.gif"></img></h1><br><h2>Mana Ball</h2><br>A strange, bouncy orb made entirely out of mana. It doesn't cause any ore damage than a regular rubber ball would.</div><div id="ms5"><h1><img src="http://i.imgur.com/i5eoRev.gif"></img></h1><br><h2>Mana Regeneration</h2><br>The ability to meditate and regain expended amounts of mana much quicker than just waiting for it to return.</div><div id="ms6"><h1><img src="http://i.imgur.com/JXV390X.gif"></img></h1><br><h2>Call To Arms</h2><br>The ability to summon ones medium to their hands. A spell that allows the users tool of trade for conducting magic to teleport to their location. </div><div id="ms7"><h1><img src="http://i.imgur.com/kAB4MS3.gif"></img></h1><br><h2>Mana Parry/Reflect/Bust</h2><br>These three spells are continuations of the same principle. Mana reflect allows the user to reflect a magical projectile shot towards them, having it fly off into a random direction. Mana parry creates the same effect, however the attack is sent directly back at the original caster, this costs double the mana. Mana burst follows this trend, however the projectile is completley destroyed in the process, costing triple the mana. </div><div id="ms8"><h1><img src="http://i.imgur.com/W2AyyVe.gif"></img></h1><br><h2>Aura Sphere</h2><br>A neat trick using a combination of both mana spark and weave. Causing a spark to burst open, and containing it inside of a weaved orb of mana will create this projectile, which acts as a mana spark but is much more powerful.</div>
+<div id="rs1"><h1><img src="http://i.imgur.com/ytujw5g.png"></img></h1><br><h2>Toneage</h2><br>When this rune is created; it’s sole purpose and design is to take in any vibrational noise that has been “coated” in magic, and amplify it; it’s level of noise dependent on how much mana is fed into it. Along with this, the rune can create two distinct effects at will; distortion and reverberation. There’s not really any attack based purpose for this spell at this time, as it was solely created so Ryan can hear his guitar in the heat of battle. However, it is possible Ryan could use this as a sort of beacon to allow people to find him, if the need arose.</div>
+<div id="rs2"><h1><img src="http://i.imgur.com/tWiOUlw.png"></img></h1><br><h2>Djent Blast</h2><br>Charging this rune with magical energies will create a simple attack that fires into a target location, causing a small, explosion like effect of magical energies once it hits a target. This attack shoots outwards from the rune in a cone like shape; meaning anything behind it will be unaffected by it, save for recoil. [Damage Scales with Rank] This rune has the ability to be used via ranged or even close combat; depending on where it is placed.<br><h2>Upgrade: Djent Beam</h2><br>An upgrade to Djent Blast, which increases its destructive power exponentially. Djent beam also allows the standard use of Djent blast as a concussive wave that strikes targets in a cone, but it can be concentrated into a beam of energy that’s specifically adept for long range as well. It can be fired directly from the top of the rune, or mentally fired in the direction that Ryan’s body is facing, although this causes it’s power to drop a substantial amount. - May now break through objects with a Tungsten Tougness Equivalent when used at its strongest.</div>
+<div id="rs3"><h1><img src="http://i.imgur.com/2TdZTGb.png"></img></h1><br><h2>Tower Shield</h2><br>Once this rune is activated, a thick wall of mana will form in a target location in a close vicinity to the rune; shielding anything in front of it from any attack one rank below the power level as the person who activates the rune. This means any attack that is extremely powerful in comparison to the defender will not be deflected; but attacks weaker can be blocked. The shield remains until the rune ceases to be active, or it deflects an attack.</div>
+<div id="rs4"><h1><img src="http://i.imgur.com/pPVC1Xe.png"></img></h1><br><h2>Psi 'Rockin A</h2>An attack modeled after one from a favorite childhood video game of his; Psi Rockin' A is an AoE spell that targets any hostile person inside of a small radius around Ryan. The spell itself causes small bursts of magical energy waves to explode; dealing knockback and explosive damage to anyone caught in the blast. Although Ryan can target this spell, his allies should be wary as if they are too close to where one goes off, they can still be hurt. Ryan has to continuously pump magic into this rune for it to stay active, meaning (unless already created) he can not activate any other spells while this is active.</div>
+<div id="rs5"><h1><img src="http://i.imgur.com/eETiAY3.png"></img></h1><br><h2>Flames</h2>As long as this rune remains active, an intense burst of flames will shoot out from it’s top, searing and burning anything that the flames come in contact with. This attack drains mana from Ryan's mana pool over time as it is active.<br><h2>Upgrade: Duality</h2><br>: No longer just bound by fire; Ryan can now create large chunks of sharpened ice (about the size of a fist) from this rune as well as his usual flames. They can cause piercing and blunt object damage, and explode into water upon contact with Ryan’s flames. If this rune comes in physical contact with an object, Ryan can also set the item ablaze, or freeze it; depending on it’s power. This takes four seconds of direct contact.</div>
+<div id="rs6"><h1><img src="http://i.imgur.com/ld9ccLc.png"></img></h1><br><h2>Shards</h2><br>Once this rune is activated, a large amount of tiny magical shards will protrude from it, shooting towards a target of Ryan’s choice. These shards can not be sent in opposite directions, instead attacking like a horde of angry hornets, ripping and cutting through flesh or any material it comes in contact with.</div>
+<div id="rs7"><h1><img src="http://i.imgur.com/91WiLSR.png"></img></h1><br><h2>Bass Boost</h2><br> When this rune is activated, a small orb of energy shoots out from its base; and travels a meter or two outwards from it before remaining stationary in the air. Once it stops; it expands out into a semi-large rectangular shape, akin to a small window in a cabin. Any magical projectile that passes through this gate will be buffed in power (One rank higher), however, the higher the power gap between Ryan and the attack is, the harder it will be for the user to control its path/distance. Ryan does not control any attacks that pass through this gate; but will suffer mana loss every time the gate is used (The more powerful the attack the more mana drained). He is also able to remove the buff from an attack/remove the gate at will.</div>
+<div id="rs8"><h1><img src="http://i.imgur.com/S3VnO9B.png"></img></h1><br><h2> Minds Eye</h2><br>This rune must always be written for one time use; as upon activation, the rune will fly off the surface it was written upon, and towards the desired target. It’s projectile tendencies are akin to a bullet, and will do moderate damage (imagine it as being branded by hostile magic) upon contact. Once it hits a target, it will stick to that target's surface for five more of Ryan’s posts. With this active, Ryan will always know the general location of the rune, and any projectile based Ritualism attacks will automatically fly towards the runes location (unless Ryan specifically prevents this). Ryan can also cause the tracker to violently explode before the five turns pass by.</div>
+<div id="rs9"><h1><img src="http://i.imgur.com/r0sI7Qf.png"></img></h1><br><h2>Cadaver Communicator</h2><br>While pumping mana into this rune, Ryan can use it as a microphone for spirits in the nearby area, allowing him to hear their voices and talk to them for as long as he keeps the rune active. This spell will also give Ryan a slight ability to sense the location of Spirits in the general area. He can not use any other spells while this is active.</div>
+<div id="rs10"><h1><img src="http://i.imgur.com/506zVxX.png"></img></h1><br><h2>Pandora's Box</h2><br>Ryan places this rune in an area, and upon activating; it cements into the ground, and begins to draw in magical power from the around it’s range. Pandora’s Box has two ways of accomplishing this, by absorbing the magical discharge from spells, or completely sucking in and absorbing a magical projectile. Any spell that is activated within a 35 foot radius of this rune will allow it’s magical discharge to absorb into it. This will not stop or effect the spell in any way; it simply means that the more spells used around the general area of the rune, the more powerful the box becomes. However, if a projectile (including Ryan’s) is to fly DIRECTLY over the Runic seal, it will become absorbed, dissipating and causing it’s magical energy to become trapped within. This method will give Pandora’s Box much more mana than simply absorbing the discharge. Other things that will affect the power of the box include how many different mana signatures (different mages) or mana types are inside the box. The mana trapped inside the box will begin to convert into a simple and base form of energy, and when Ryan activates the rune again, it will explode outwards from the rune, and attack every hostile mana signature in a 50 foot radius; explosive blasts firing towards them.<br><h2>Upgrade: World Eater</h2><br>An upgrade to Pandora's box. The rune acts just as it did before, with a few new added features. For instance, the rune now has added psiphoning capabilities. Any mage or mana signature that enters the 35 foot radius of the rune, and is SEEN by Ryan is subject to their mana being slowly drained while inside. Ryan can deactivate this on specific people at will, and it’s intensity of siphoning increases the closer a person is to the epicenter of the rune. Someone foolish enough to place their body atop the rune will have their mana sucked dry, likely killing them. The rune is also able to absorb aura-type spells as well. Although the runes radius is 35 feet, any aura that is activated (meaning the caster must be within this range) within 15 feet of the rune will be absorbed, negating its effect until the user is outside of this area.</div>
+<div id="rs11"><h1><img src="http://i.imgur.com/lSBYmgU.png"></img></h1><br><h2>Shift-Step</h2></div>
+<div id="cs1"><h1><img src="http://i.imgur.com/S3cJeuY.png"></img></h1><br><h2>Pick Bomb</h2><br>Ryan summons up a regular size guitar pick to his fingers. This guitar pick has magical properties, and once Ryan pumps his mana into the the pick, it will explode a few seconds later; allowing him to use them as impromptu bombs/grenades. These explosions will match that of a cherry bomb at paige rank (disorientation, Minor burns), but will become more powerful as the rank increases(Mage = Regular Grenade, smaller blast radius.)</div>
+<div id="cs2"><h1><img src="http://i.imgur.com/XjSNe8p.png"></img></h1><br><h2>Grabby Hand</h2><br> Ryan Summons a strange, sort of ethereal glove that covers his hand, with a magical tether attached. Ryan can shoot this glove off of his hand to reach for an object/person a max distance of (40) feet away; and can either haul the object towards him or pull himself towards the object, akin to a grappling hook.<br><h2>Upgrade: Kinetic Pull</h2><br>Ryan can now simply propel himself forward using the kinetic energy from the blast the hand lets off. Meaning that Ryan can fly half the distance of the hand simply by contracting the tether of the glove and launching himself forward.</div>
+<div id="cs3"><h1><img src="http://i.imgur.com/da0e3gI.png"></img></h1><br><h2>Gargoyle Armor</h2><br>The armour is a metallic stone infused to the core with magical energy; and can protect him from most magical damage (Save for extremely powerful attacks) and a majority of physical blows. The armour is lightweight in nature, allowing for Ryan to move unhindered. However, if Ryan stops moving while wearing the armour; and poses his body much like that of a gargoyle, the armour will envelop his entire body for the duration he stays idle; increasing the defensive capabilities extremely until he moves again.The drawback to this form is that Ryan will not be able to move or breathe while in this state; and must continuously pump magic into his armour for the form to continue it’s buff.</div>
+<div id="cs4"><h1><img src="http://i.imgur.com/lMG8Ld2.jpg"></img></h1><br><h2>Heavy Step</h2><br>Ryan conjures a massive boot made out of metal to one of his feet; stomping it onto the ground in a heavy slam. It craters the earth (or person) underneath, and also shakes the ground violently for a few seconds. This shake would be enough to disrupt the movement or flow of someone physically moving on ground level.</div>
+<div id="cs5"><h1><img src="http://i.imgur.com/ZpMmsBv.png"></img></h1><br><h2>Sidewinder</h2><br>Ryan conjures two, insect like appendages on the side of his body; spanning out two and a half feet on either side. They contain spikes at the tips which are extremely sharp, and can pierce through flesh with ease and most armor. Ryan can also contort them in a spinning manner; pushing them back like springs only to let them fly loose and return to their original length, spinning and digging into anything in their path, much like a drill would.</div>
+<div id="cs6"><h1><img src="http://i.imgur.com/oAFLx9U.jpg"></img></h1><br><h2>Buzz-Kill</h2><br>In order to protect himself from attacks, Ryan conjures strange, ethereal looking buzzsaws that protrude out of his back; one on the edge of either shoulder blade. Only half the buzzsaw can be seen from outside of Ryan's back; but it seems to spin and rev without causing him any physical damage. These blades will tear viciously into anything that comes in contact with his person; hopefully preventing many backstab type attacks on his body. He must channel mana into the buzzsaws to get them to spin up. </div>
+<div id="cs7"><h1><img src="http://i.imgur.com/B9MqbTJ.jpg"></img></h1><br><h2>Composition Sentinels</h2><br>This Spell starts with the conjuration of a grand piano in front of Ryan, to which he plays a simple melody upon before it disperses. As it does, they keys (both black and white) of the piano stay behind, floating into the air and spreading out into the environment. Ryan can control the white keys to fulfill basic objectives, such as flying around the area to grab people/objects and move them out of the way. The Black keys can become sharp and jagged in nature, covered in an aura of Ryan's magic. They can tear through most constructs with ease, and also explode at Ryans will. </div>
+<div id="es1"><h1><img src="http://i.imgur.com/H4Eioee.png"></img></h1><h2>Shredder</h2><br>Pouring Electrical magic into his hands, Ryan's nerve impulses are supercharged, allowing any hand based action
+(such as spells) to be performed with an intensely increased speed.</div>
+<div id="es2"><h1><img src="http://i.imgur.com/NFOZsjt.png"></img></h1><h2>Lightning Bolt</h2><br>Ryan creates a lightning bolt in his hand, about the size of a 5 foot spear, and tosses it at a desired target. This spell causes piercing and shocking damage, and can seize up limbs if it cuts deep enough.</div>
+<div id="es3"><h1><img src="http://i.imgur.com/kSTqDen.png"></img></h1><h2>Charged!</h2><br>Holding an object in his hand for a few seconds, Ryan can create an electric charge on an object. If another person comes in contact with this charged object, it will administer a hefty shock, and possibly cause minor paralyzation for a short period of time.</div>
+<div id="es4"><h1><img src="http://i.imgur.com/bPjmR6w.jpg"></img></h1><h2>Static Perception</h2><br>Ryan covers the immediate 15 foot radius with small charges of electrical mana. This can be seen via small crackles of static shocks in the air, but contains no visual impairments. Ryan can sense mana, and mana signatures entering this radius, and attach an electronic tether to any mana signature that steps inside, allowing him to physically pull (think grabbby hand, if the opponent is stronger, they can pull back) the person to his location, or fly towards their location quickly. Ryan can not actively use other spells when using this, and it drains mana heavily over long periods of time.</div>
+<div id="ts1"><h1><img src="http://i.imgur.com/gIRtaak.png"></img></h1><br><br><h2>Tribalism Spell:</h2><br>This is an example tribalism spell. The spells information will go here.</div>
+<div id="fs1"><h1><img src="http://i.imgur.com/ifV2Fs4.jpg"></img></h1><br><br><h2>Faith Spell</h2><br>This is an example faith spell. The spells information will go here.</div>
+<div id="mana"><h1>Mana Manipulation</h1><Br>"This is a standard tree that everyone gets access to at paige (does not count toward your total). The rank of this tree is equivalent to that of your highest skill tree. Mana is the source of magic for every tree and can manipulated in its pure form. The nature of ones mana is dependent on the trees they possess. Mana in its pure form can be used as a sort of energy to attack foes or defend ones self, however it is relatively weak on its own."<br><br>Click on the circles above to view Ryan's spells in this tree of magic.</div>
+<div id="rit"><h1>Ritualism</h1><br>"This tree specializes in using Words of Power. Ritualism requires Words to be written on a surface in order for their effects to activate. These can range from stone tablets, scrolls, runes, gloves and anything fit for writing (All of which supplied by Vetiver). Words of Power can be written on any surface in an environment to set traps, imbue an area or object with some effect and more. This tree is limited to written magic and requires a student to write down and carry items with them in order to use their spells. Words of Power can be used for virtually anything, but to a weaker degree than a tree specifically designed for a spell. Examples include Rune Prison, Explosion Seal and Scroll of Thunderbolt (all of which require creation)."<br><br>Click on the circles above to view Ryan's spells in this tree of magic.</div>
+<div id="con"><h1>Conjuration</h1><br>"Allows you to summon any range of objects to your disposal. Summonings may be imbued with special properties or given specific abilities. Conjurers may learn to animate their summonings telekinetically as well. For example, you may summon a Mjolnir which may only be picked up by the summoner."<br><br>Click on the circles above to view Ryan's spells in this tree of magic.</div>
+<div id="elec"><h1>Elementalism -- Electromancy</h1>"In this tree, a student can select one of the six elements: earth, air, lightning, water, ice or fire. Though only one may be selected, there are numerous possibilities for each element. All spells must incorporate some aspect of the selected element"<br><br>Click on the circles above to view Ryan's spells in this tree of magic.</div>
+<div id="tribe"><h1>Tribalism</h1>"It seems to be an archaic form of Ritualism, in which unique and familial hieroglyphs of power were branded directly onto the body, rather than into parchment or upon runes. They cannot be acquired in any way except from existing family members, or descendants of those who possessed the branding magics. For this reason each application is unique, and though those within the same tribe may gain similar abilities, no two Tribalists with have the same glyphs. While often mistaken for tattoos, if applied correctly, they cannot be removed. Even if the skin is peeled away, markings will resurface upon whatever is left. Activating their symbols may come naturally, or as a challenge, depending on the wearer's knowledge. This is a human tradition - even if the glyphs were correctly applied by an appropriate party, they would not work on any other race. At the most basic level, hieroglyphs provide physical boons. Back in barbarian times, brutes who carried these markings were considered Gods in battle - nearly every aspect of a pre-medieval battle scenario came easily to them. As they unlock their potential, Tribalists will find that they may even access unique magical abilities."<br><br>Click on the circles above to view Ryan's spells in this tree of magic.</div>
+<div id="faith"><h1>Faith</h1>"This Tree is one based completely on healing and providing protective charms. They are also adept at removing and protecting from curses and other afflictions. You will not be able to learn any type of offensive spell based on this tree. The Faith user is generally a kind and supportive person whose spells focus on others. Initially they can heal small to moderate cuts and scrapes, later they will be able to remove illness symptoms and even mend broken limbs. They may create restorative or enhancement potions as well. When they become a High Mage, they may created Blessed equipment for themselves and others. Faith magic used with malicious intent will be coniderably weakened, but this only applies to Faith Magic specifically. This does not apply to magic outside the tree. [Mana Manipulation tree will however take on Faith aspects."<br><br>Click on the circles above to view Ryan's spells in this tree of magic.</div>
+</div> 
